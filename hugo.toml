@@ -1,0 +1,45 @@
+baseURL = 'https://peter-kunosu.github.io/'
+languageCode = 'en'
+title = 'Peter | Developer Portfolio'
+theme = 'blowfish'
+enableRobotsTXT = true
+
+[params]
+  colorScheme = 'blowfish'
+  defaultAppearance = 'light'
+  autoSwitchAppearance = true
+  description = 'Projects and open-source work by Peter.'
+  mainSections = ['projects']
+  disableThemeToggle = false
+  showScrollToTop = true
+
+[params.author]
+  name = 'Peter'
+  headline = 'Developer · Builder · Open Source'
+  bio = 'I build things, experiment with technology, and share my work on GitHub.'
+  links = [{ github = 'https://github.com/peter-kunosu' }]
+
+[params.homepage]
+  layout = 'custom'
+  showRecent = false
+
+[params.header]
+  layout = 'basic'
+
+[params.footer]
+  showCopyright = true
+  showThemeAttribution = true
+
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+  [[menu.main]]
+    name = 'Projects'
+    url = '/#projects'
+    weight = 20
+  [[menu.main]]
+    name = 'GitHub'
+    url = 'https://github.com/peter-kunosu'
+    weight = 30
