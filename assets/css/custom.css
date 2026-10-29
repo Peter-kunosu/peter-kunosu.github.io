@@ -1,29 +1,18 @@
-:root {scroll-behavior:smooth;}
-.portfolio-hero,.portfolio-projects,.portfolio-about {max-width:1080px;margin:0 auto;padding-left:1.5rem;padding-right:1.5rem;}
-.portfolio-hero {padding-top:7rem;padding-bottom:8rem;}
-.portfolio-eyebrow {font-size:.76rem;letter-spacing:.18em;font-weight:750;color:#64748b;margin-bottom:1.5rem;}
-.portfolio-hero h1 {font-size:clamp(3.2rem,8vw,6.7rem);font-weight:800;letter-spacing:-.065em;line-height:1.06;margin:0;}
-.portfolio-hero h1 span {color:#64748b;}
-.portfolio-intro {font-size:1.2rem;line-height:1.75;max-width:600px;color:#64748b;margin:2rem 0;}
-.portfolio-actions {display:flex;gap:1rem;flex-wrap:wrap;align-items:center;}
-.portfolio-primary {display:inline-block;background:#2563eb;color:#fff!important;border-radius:9px;padding:.85rem 1.3rem;font-weight:650;text-decoration:none!important;}
-.portfolio-primary:hover {background:#1d4ed8;}
-.portfolio-secondary {padding:.85rem 1.3rem;font-weight:650;text-decoration:none!important;}
-.portfolio-projects {padding-bottom:7rem;scroll-margin-top:5rem;}
-.portfolio-section-heading {display:flex;justify-content:space-between;align-items:end;gap:1rem;margin-bottom:2rem;}
-.portfolio-section-heading h2,.portfolio-about h2 {font-size:clamp(2rem,4vw,3rem);letter-spacing:-.04em;font-weight:750;}
-.portfolio-section-heading a {color:#2563eb;font-weight:600;white-space:nowrap;}
-.portfolio-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem;}
-.portfolio-card {border:1px solid #dbe2eb;border-radius:15px;padding:1.6rem;min-height:240px;display:flex;flex-direction:column;transition:transform .2s,border-color .2s;background:rgba(148,163,184,.035);}
-.portfolio-card:hover {transform:translateY(-4px);border-color:#60a5fa;}
-.portfolio-card-top {display:flex;justify-content:space-between;align-items:center;color:#64748b;font-size:1.5rem;}
-.portfolio-card h3 {font-size:1.3rem;font-weight:750;margin:1rem 0 .6rem;overflow-wrap:anywhere;}
-.portfolio-card h3 a {text-decoration:none!important;}
-.portfolio-card p {line-height:1.6;color:#64748b;flex:1;}
-.portfolio-card-bottom {display:flex;gap:.75rem;flex-wrap:wrap;font-size:.76rem;color:#64748b;margin-top:1.4rem;align-items:center;}
-.portfolio-tag {background:#dbeafe;color:#1d4ed8;padding:.25rem .55rem;border-radius:5px;font-weight:650;}
-.portfolio-about {border-top:1px solid #dbe2eb;padding-top:5rem;padding-bottom:7rem;}
-.portfolio-about p:not(.portfolio-eyebrow) {color:#64748b;margin:1rem 0 2rem;}
-.portfolio-empty {padding:2rem;border:1px dashed #94a3b8;border-radius:12px;}
-@media(max-width:680px){.portfolio-hero{padding-top:4rem;padding-bottom:5rem}.portfolio-grid{grid-template-columns:1fr}.portfolio-section-heading{align-items:start;flex-direction:column}.portfolio-about{padding-top:3rem}}
-@media(prefers-color-scheme:dark){.portfolio-card{border-color:#334155}.portfolio-about{border-color:#334155}.portfolio-tag{background:#1e3a5f;color:#bfdbfe}}
+:root { scroll-behavior: smooth; }
+.simple-portfolio { max-width: 940px; margin: 0 auto; padding: 0 1.5rem 6rem; }
+.simple-intro { padding: 6rem 0 5rem; }
+.simple-intro h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 650; letter-spacing: -.045em; line-height: 1.2; margin: 0 0 1rem; }
+.simple-intro p { color: #7c8795; font-size: 1.05rem; line-height: 1.7; max-width: 560px; margin: 0; }
+.simple-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 1.5rem; }
+.simple-heading h2 { font-size: 1.45rem; font-weight: 650; letter-spacing: -.025em; margin: 0; }
+.simple-heading a { font-size: .88rem; color: #8492a4; text-decoration: none; }
+.simple-heading a:hover, .simple-project h3 a:hover { text-decoration: underline; }
+.simple-project-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.simple-project { border: 1px solid #d7dde5; border-radius: 10px; padding: 1.5rem; min-height: 180px; display: flex; flex-direction: column; background: transparent; }
+.simple-project h3 { font-size: 1.1rem; font-weight: 650; overflow-wrap: anywhere; margin: 0 0 .65rem; }
+.simple-project h3 a { text-decoration: none; }
+.simple-project p { color: #7c8795; font-size: .93rem; line-height: 1.65; flex: 1; margin: 0; }
+.simple-meta { display: flex; gap: 1rem; flex-wrap: wrap; color: #8995a5; font-size: .78rem; margin-top: 1.3rem; }
+.simple-empty { color: #7c8795; line-height: 1.7; }
+@media (prefers-color-scheme: dark) { .simple-project { border-color: #343b46; } }
+@media (max-width: 640px) { .simple-intro { padding: 4rem 0 3.5rem; } .simple-project-grid { grid-template-columns: 1fr; } .simple-heading { flex-direction: column; align-items: start; } }
